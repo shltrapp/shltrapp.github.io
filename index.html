@@ -2,13 +2,6 @@
 <html>
 <head>
 <style>
-  html { 
-  background: url(tornado-child1.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 #bg {
   position: fixed; 
   top: -50%; 
@@ -26,8 +19,17 @@
   min-width: 50%;
   min-height: 50%;
 }
+#image {
+  background-image: url(tornado-child2.jpg);
+}
+@media only screen and (max-width: 320px) {
+#image {
+  background-image: url(tornado-child1.jpg);
+  }
+}
 </style>
 </head>
 <body>
+  <div id="image"></div>
 </body>
 </html>
